@@ -2,7 +2,10 @@
 import "./App.css";
 
 const skills = {
-  "Programming Languages": ["Python", "R", "Java", "JavaScript", "PHP", "Dart", "SQL"],
+  "Programming Languages": [
+    "Python", "R", "Java", "JavaScript", "PHP", "Dart", "SQL"
+  ],
+
   "AI & Data Science": [
     "Machine Learning",
     "Deep Learning",
@@ -13,8 +16,9 @@ const skills = {
     "Prompt Engineering",
     "Pandas",
     "NumPy",
-    "Scikit-learn",
+    "Scikit-learn"
   ],
+
   "Frameworks & Development": [
     "React.js",
     "Angular",
@@ -23,8 +27,9 @@ const skills = {
     "Flask",
     "Django",
     "Spring Boot",
-    "Symfony",
+    "Symfony"
   ],
+
   "Databases & DevOps": [
     "PostgreSQL",
     "MySQL",
@@ -32,8 +37,9 @@ const skills = {
     "Supabase",
     "Docker",
     "Git",
-    "GitHub",
+    "GitHub"
   ],
+
   "Big Data & Distributed Systems": [
     "Hadoop",
     "Apache Spark",
@@ -41,8 +47,8 @@ const skills = {
     "HDFS",
     "gRPC",
     "REST APIs",
-    "Microservices",
-  ],
+    "Microservices"
+  ]
 };
 
 const projects = [
@@ -51,43 +57,43 @@ const projects = [
     category: "Artificial Intelligence · Web Development",
     description:
       "An AI-powered recruitment platform designed to analyze CVs and match candidate profiles with job offers.",
-    technologies: ["React", "FastAPI", "PostgreSQL", "LLMs", "Docker"],
+    technologies: ["React", "FastAPI", "PostgreSQL", "LLMs", "Docker"]
   },
   {
     title: "Learning Disorders Detection",
     category: "Machine Learning · Explainable AI",
     description:
       "A machine learning project focused on the early prediction of learning disorders using behavioral and educational data.",
-    technologies: ["Python", "Machine Learning", "Angular", "Flask"],
+    technologies: ["Python", "Machine Learning", "Angular", "Flask"]
   },
   {
     title: "Smart CV Management Application",
     category: "Mobile Development · AI",
     description:
       "A mobile application for managing CVs and exploring intelligent recruitment features.",
-    technologies: ["Flutter", "Firebase", "Supabase"],
+    technologies: ["Flutter", "Firebase", "Supabase"]
   },
   {
     title: "Distributed Big Data Project",
     category: "Big Data · Distributed Systems",
     description:
       "A distributed data processing project using Hadoop and Spark across virtual machines.",
-    technologies: ["Hadoop", "Spark", "HDFS"],
+    technologies: ["Hadoop", "Spark", "HDFS"]
   },
   {
     title: "SOA & Microservices",
     category: "Software Architecture",
     description:
       "A project exploring service-oriented architecture and communication between distributed services.",
-    technologies: ["Kafka", "gRPC", "REST"],
+    technologies: ["Kafka", "gRPC", "REST"]
   },
   {
     title: "Medical Appointment Management",
     category: "Web Development",
     description:
       "A web application for managing medical appointments.",
-    technologies: ["Django"],
-  },
+    technologies: ["Django"]
+  }
 ];
 
 function SectionTitle({ number, title, subtitle }) {
@@ -103,6 +109,8 @@ function SectionTitle({ number, title, subtitle }) {
 function App() {
   return (
     <div className="portfolio">
+
+      {/* NAVBAR */}
       <header className="navbar">
         <a href="#home" className="brand">
           NB<span>.</span>
@@ -114,11 +122,13 @@ function App() {
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
+          <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <main>
+
         {/* HOME */}
         <section id="home" className="hero-section">
           <div className="hero-content">
@@ -140,6 +150,7 @@ function App() {
               <a href="#projects" className="btn btn-primary">
                 Explore My Projects
               </a>
+
               <a href="#contact" className="btn btn-outline">
                 Contact Me
               </a>
@@ -153,6 +164,7 @@ function App() {
               >
                 LinkedIn ↗
               </a>
+
               <a
                 href="https://github.com/najet-ben-abi-ellotef"
                 target="_blank"
@@ -164,18 +176,26 @@ function App() {
           </div>
 
           <div className="hero-decoration">
-          <div className="profile-image-container">
-          <img
-               src="/images/profil.png"
-               alt="Najet Ben Abi Ellotef"
-               className="profile-image"
-          />
-         </div>
+            <div className="profile-image-container">
+              <img
+                src="/images/profil.png"
+                alt="Najet Ben Abi Ellotef"
+                className="profile-image"
+              />
+            </div>
 
-  <span className="floating-tag tag-one">Machine Learning</span>
-  <span className="floating-tag tag-two">Data Science</span>
-  <span className="floating-tag tag-three">Innovation</span>
-</div>
+            <span className="floating-tag tag-one">
+              Machine Learning
+            </span>
+
+            <span className="floating-tag tag-two">
+              Data Science
+            </span>
+
+            <span className="floating-tag tag-three">
+              Innovation
+            </span>
+          </div>
         </section>
 
         {/* ABOUT */}
@@ -190,11 +210,13 @@ function App() {
             <div className="about-card">
               <span className="about-symbol">✦</span>
               <h3>Who am I?</h3>
+
               <p>
                 I am a Computer Science Engineering student at the
                 Polytechnic School of Sousse, specializing in Data Science
                 and Artificial Intelligence.
               </p>
+
               <p>
                 I am interested in developing intelligent solutions,
                 exploring machine learning techniques and building
@@ -207,14 +229,17 @@ function App() {
                 <span>Education</span>
                 <strong>Computer Science Engineering</strong>
               </div>
+
               <div>
                 <span>Specialization</span>
                 <strong>Data Science & AI</strong>
               </div>
+
               <div>
                 <span>Location</span>
                 <strong>Sousse, Tunisia</strong>
               </div>
+
               <div>
                 <span>Interests</span>
                 <strong>AI · ML · Data · Development</strong>
@@ -235,6 +260,7 @@ function App() {
             {Object.entries(skills).map(([category, items]) => (
               <article className="skill-card" key={category}>
                 <h3>{category}</h3>
+
                 <div className="skill-tags">
                   {items.map((skill) => (
                     <span key={skill}>{skill}</span>
@@ -261,8 +287,12 @@ function App() {
                   <span className="project-star">✦</span>
                 </div>
 
-                <p className="project-category">{project.category}</p>
+                <p className="project-category">
+                  {project.category}
+                </p>
+
                 <h3>{project.title}</h3>
+
                 <p className="project-description">
                   {project.description}
                 </p>
@@ -287,36 +317,56 @@ function App() {
 
           <div className="timeline">
             <article className="timeline-item">
-              <span className="timeline-date">July – August 2026</span>
+              <span className="timeline-date">
+                July – August 2026
+              </span>
+
               <h3>Summer Internship · itgate</h3>
+
               <p>
                 Development of JobMatch AI, an AI-powered recruitment
                 platform for CV analysis and candidate-job matching.
               </p>
+
               <div className="skill-tags">
                 {["React", "FastAPI", "PostgreSQL", "AI", "Docker"].map(
-                  (item) => <span key={item}>{item}</span>
+                  (item) => (
+                    <span key={item}>{item}</span>
+                  )
                 )}
               </div>
             </article>
 
             <article className="timeline-item">
               <span className="timeline-date">2016</span>
+
               <h3>Final-Year Internship · Easy-Constat</h3>
+
               <p>
                 Development of a digital accident reporting application
                 using web and mobile technologies.
               </p>
+
               <div className="skill-tags">
-                {["Java JEE", "Spring Boot", "AngularJS", "Ionic", "MySQL"].map(
-                  (item) => <span key={item}>{item}</span>
-                )}
+                {[
+                  "Java JEE",
+                  "Spring Boot",
+                  "AngularJS",
+                  "Ionic",
+                  "MySQL"
+                ].map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
               </div>
             </article>
 
             <article className="timeline-item">
-              <span className="timeline-date">2024 – Present</span>
+              <span className="timeline-date">
+                2024 – Present
+              </span>
+
               <h3>Polytechnic School of Sousse</h3>
+
               <p>
                 Engineering Degree in Computer Science,
                 Data Science & Artificial Intelligence.
@@ -325,14 +375,21 @@ function App() {
 
             <article className="timeline-item">
               <span className="timeline-date">2013 – 2016</span>
-              <h3>Higher School of Sciences and Technology of Hammam Sousse</h3>
+
+              <h3>
+                Higher School of Sciences and Technology of Hammam Sousse
+              </h3>
+
               <p>Bachelor's Degree in Computer Science.</p>
             </article>
           </div>
         </section>
 
         {/* CERTIFICATIONS */}
-        <section id="certifications" className="section certifications-section">
+        <section
+          id="certifications"
+          className="section certifications-section"
+        >
           <SectionTitle
             number="05"
             title="Certifications & Activities"
@@ -340,6 +397,16 @@ function App() {
           />
 
           <div className="certification-grid">
+
+            {/* AI NIGHT 2026 - NEW */}
+            <article className="cert-card">
+              <span>2026</span>
+              <h3>AI Night 2026</h3>
+              <p>
+                Certificate of Participation · AI Night 2026.
+              </p>
+            </article>
+
             <article className="cert-card">
               <span>2025 – 2026</span>
               <h3>University Social Project · PSC</h3>
@@ -364,8 +431,11 @@ function App() {
             <article className="cert-card">
               <span>2015</span>
               <h3>Computer Night</h3>
-              <p>Certificate of Participation · Coding Moon / Microsoft.</p>
+              <p>
+                Certificate of Participation · Coding Moon / Microsoft.
+              </p>
             </article>
+
           </div>
         </section>
 
@@ -379,6 +449,7 @@ function App() {
 
           <div className="contact-card">
             <h3>Interested in my profile?</h3>
+
             <p>
               Feel free to explore my CVs or connect with me through
               my professional platforms.
@@ -416,6 +487,7 @@ function App() {
               >
                 LinkedIn ↗
               </a>
+
               <a
                 href="https://github.com/najet-ben-abi-ellotef"
                 target="_blank"
@@ -426,12 +498,20 @@ function App() {
             </div>
           </div>
         </section>
+
       </main>
 
+      {/* FOOTER */}
       <footer className="main-footer">
-        <a href="#home" className="brand">NB<span>.</span></a>
-        <p>Designed & developed by Najet Ben Abi Ellotef · 2026</p>
+        <a href="#home" className="brand">
+          NB<span>.</span>
+        </a>
+
+        <p>
+          Designed & developed by Najet Ben Abi Ellotef · 2026
+        </p>
       </footer>
+
     </div>
   );
 }
