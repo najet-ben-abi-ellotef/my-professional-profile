@@ -314,6 +314,8 @@ solutions and developing AI-powered applications.
           </div>
         </section>
 
+       
+        
         {/* EXPERIENCE */}
         <section id="experience" className="section experience-section">
           <SectionTitle
@@ -323,6 +325,8 @@ solutions and developing AI-powered applications.
           />
 
           <div className="timeline">
+
+            {/* 2026 - itgate */}
             <article className="timeline-item">
               <span className="timeline-date">
                 July – August 2026
@@ -344,6 +348,49 @@ solutions and developing AI-powered applications.
               </div>
             </article>
 
+            {/* 2024 - Polytechnic School */}
+            <article className="timeline-item">
+              <span className="timeline-date">
+                2024 – Present
+              </span>
+
+              <h3>Polytechnic School of Sousse</h3>
+
+              <p>
+                Engineering Degree in Computer Science,
+                specializing in Data Science & Artificial Intelligence.
+              </p>
+
+              <div className="skill-tags">
+                {["Data Science", "Machine Learning", "Deep Learning", "AI"].map(
+                  (item) => (
+                    <span key={item}>{item}</span>
+                  )
+                )}
+              </div>
+            </article>
+
+            {/* 2024 - New Age Travel */}
+            <article className="timeline-item">
+              <span className="timeline-date">2024</span>
+
+              <h3>Travel Agency Assistant · New Age Travel</h3>
+
+              <p>
+                Customer reservation management, administrative
+                organization, and customer relations.
+              </p>
+
+              <div className="skill-tags">
+                {["Customer Service", "Administration", "Communication"].map(
+                  (item) => (
+                    <span key={item}>{item}</span>
+                  )
+                )}
+              </div>
+            </article>
+
+            {/* 2016 - Easy-Constat */}
             <article className="timeline-item">
               <span className="timeline-date">2016</span>
 
@@ -367,19 +414,27 @@ solutions and developing AI-powered applications.
               </div>
             </article>
 
+            {/* 2015 - 2017 - New Age Travel */}
             <article className="timeline-item">
-              <span className="timeline-date">
-                2024 – Present
-              </span>
+              <span className="timeline-date">2015 – 2017</span>
 
-              <h3>Polytechnic School of Sousse</h3>
+              <h3>Travel Agency Assistant · New Age Travel</h3>
 
               <p>
-                Engineering Degree in Computer Science,
-                Data Science & Artificial Intelligence.
+                Customer reservation management, administrative
+                organization, and customer relations.
               </p>
+
+              <div className="skill-tags">
+                {["Customer Service", "Administration", "Communication"].map(
+                  (item) => (
+                    <span key={item}>{item}</span>
+                  )
+                )}
+              </div>
             </article>
 
+            {/* 2013 - 2016 */}
             <article className="timeline-item">
               <span className="timeline-date">2013 – 2016</span>
 
@@ -387,10 +442,14 @@ solutions and developing AI-powered applications.
                 Higher School of Sciences and Technology of Hammam Sousse
               </h3>
 
-              <p>Bachelor's Degree in Computer Science.</p>
+              <p>
+                Bachelor's Degree in Computer Science.
+              </p>
             </article>
+
           </div>
         </section>
+
 
         {/* CERTIFICATIONS */}
         <section
