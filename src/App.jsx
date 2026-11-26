@@ -141,9 +141,11 @@ function App() {
             <h2>Data Science & Artificial Intelligence</h2>
 
             <p>
-              Computer Science Engineering student passionate about
-              Artificial Intelligence, Machine Learning and innovative
-              technologies.
+              Computer Science Engineering student specializing in Data Science
+and Artificial Intelligence, passionate about Machine Learning,
+Deep Learning, Natural Language Processing (NLP), and Generative AI.
+Driven by innovation, I enjoy transforming data into intelligent
+solutions and developing AI-powered applications.
             </p>
 
             <div className="hero-buttons">
