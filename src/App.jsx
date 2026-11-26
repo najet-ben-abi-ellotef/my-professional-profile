@@ -346,41 +346,7 @@ solutions and developing AI-powered applications.
           </div>
         </section>
 
-        {/* PROJECTS */}
-        <section id="projects" className="section projects-section">
-          <SectionTitle
-            number="03"
-            title="Featured Projects"
-            subtitle="Some of my academic and personal work"
-          />
-
-          <div className="projects-grid">
-            {projects.map((project, index) => (
-              <article className="project-card" key={project.title}>
-                <div className="project-top">
-                  <span>PROJECT 0{index + 1}</span>
-                  <span className="project-star">✦</span>
-                </div>
-
-                <p className="project-category">
-                  {project.category}
-                </p>
-
-                <h3>{project.title}</h3>
-
-                <p className="project-description">
-                  {project.description}
-                </p>
-
-                <div className="skill-tags">
-                  {project.technologies.map((tech) => (
-                    <span key={tech}>{tech}</span>
-                  ))}
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
+     
 
        
         
@@ -534,7 +500,42 @@ solutions and developing AI-powered applications.
 
           </div>
         </section>
+   {/* PROJECTS */}
+        <section id="projects" className="section projects-section">
+          <SectionTitle
+            number="03"
+            title="Featured Projects"
+            subtitle="Some of my academic and personal work"
+          />
 
+          <div className="projects-grid">
+            {projects.map((project, index) => (
+              <article className="project-card" key={project.title}>
+                <div className="project-top">
+                  <span>PROJECT 0{index + 1}</span>
+                  <span className="project-star">✦</span>
+                </div>
+
+                <p className="project-category">
+                  {project.category}
+                </p>
+
+                <h3>{project.title}</h3>
+
+                <p className="project-description">
+                  {project.description}
+                </p>
+
+                <div className="skill-tags">
+                  {project.technologies.map((tech) => (
+                    <span key={tech}>{tech}</span>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+        
         {/* CONTACT */}
         <section id="contact" className="section contact-section">
           <SectionTitle
