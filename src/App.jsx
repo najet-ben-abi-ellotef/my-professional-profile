@@ -249,7 +249,10 @@ solutions and developing AI-powered applications.
 
               <div>
                 <span>Interests</span>
-                <strong>AI · ML · Data · Development</strong>
+                <strong>   Artificial Intelligence · Machine Learning · Deep Learning ·
+    NLP · Generative AI · LLMs · Computer Vision · Data Analytics ·
+    Predictive Modeling · Big Data · Distributed Systems ·
+    Web & Mobile Development</strong>
               </div>
             </div>
           </div>
@@ -316,139 +319,97 @@ solutions and developing AI-powered applications.
 
        
         
-        {/* EXPERIENCE */}
-        <section id="experience" className="section experience-section">
-          <SectionTitle
-            number="04"
-            title="Experience & Education"
-            subtitle="My academic and professional journey"
-          />
+       
+{/* EXPERIENCE & EDUCATION */}
+<section id="experience" className="section experience-section">
+  <SectionTitle
+    number="04"
+    title="Experience & Education"
+    subtitle="My academic and professional journey"
+  />
 
-          <div className="timeline">
+  <div className="timeline">
 
-            {/* 2026 - itgate */}
-            <article className="timeline-item">
-              <span className="timeline-date">
-                July – August 2026
-              </span>
+    {/* 2026 - itgate */}
+    <article className="timeline-item">
+      <span className="timeline-date">July – August 2026</span>
+      <h3>Summer Internship · itgate</h3>
+      <p>
+        Development of JobMatch AI, an AI-powered recruitment
+        platform for CV analysis and candidate-job matching.
+      </p>
+      <div className="skill-tags">
+        {["React", "FastAPI", "PostgreSQL", "AI", "Docker"].map(item => (
+          <span key={item}>{item}</span>
+        ))}
+      </div>
+    </article>
 
-              <h3>Summer Internship · itgate</h3>
+    {/* 2024 - Present - Engineering Degree */}
+    <article className="timeline-item">
+      <span className="timeline-date">2024 – Present</span>
+      <h3>Polytechnic School of Sousse</h3>
+      <p>
+        Engineering Degree in Computer Science,
+        specializing in Data Science and Artificial Intelligence.
+      </p>
+      <div className="skill-tags">
+        {["Data Science", "Machine Learning", "Deep Learning", "NLP", "Generative AI"].map(item => (
+          <span key={item}>{item}</span>
+        ))}
+      </div>
+    </article>
 
-              <p>
-                Development of JobMatch AI, an AI-powered recruitment
-                platform for CV analysis and candidate-job matching.
-              </p>
+    {/* 2016 - Present - Private Tutor */}
+    <article className="timeline-item">
+      <span className="timeline-date">2016 – Present</span>
+      <h3>Private Tutor · Mathematics, Science & Physics</h3>
+      <p>
+        Tutoring secondary school students. Developing teaching
+        and communication skills while adapting teaching methods
+        to students' individual needs.
+      </p>
+      <div className="skill-tags">
+        {["Teaching", "Communication", "Mathematics", "Science", "Physics"].map(item => (
+          <span key={item}>{item}</span>
+        ))}
+      </div>
+    </article>
 
-              <div className="skill-tags">
-                {["React", "FastAPI", "PostgreSQL", "AI", "Docker"].map(
-                  (item) => (
-                    <span key={item}>{item}</span>
-                  )
-                )}
-              </div>
-            </article>
+    {/* 2016 - Easy-Constat */}
+    <article className="timeline-item">
+      <span className="timeline-date">2016</span>
+      <h3>Final-Year Internship · Easy-Constat</h3>
+      <p>
+        Development of a digital accident reporting application
+        using web and mobile technologies.
+      </p>
+      <div className="skill-tags">
+        {["Java JEE", "Spring Boot", "AngularJS", "Ionic", "MySQL"].map(item => (
+          <span key={item}>{item}</span>
+        ))}
+      </div>
+    </article>
 
-            {/* 2024 - Polytechnic School */}
-            <article className="timeline-item">
-              <span className="timeline-date">
-                2024 – Present
-              </span>
+    {/* 2015 - 2024 - New Age Travel */}
+    <article className="timeline-item">
+      <span className="timeline-date">2015 – 2024</span>
+      <h3>Travel Agency Assistant · New Age Travel</h3>
+      <p>
+        Customer reservation management, travel arrangements,
+        administrative organization, and customer relations.
+        Development of organizational and communication skills.
+      </p>
+      <div className="skill-tags">
+        {["Customer Service", "Reservation Management", "Travel Coordination", "Administration", "Communication"].map(item => (
+          <span key={item}>{item}</span>
+        ))}
+      </div>
+    </article>
 
-              <h3>Polytechnic School of Sousse</h3>
+  </div>
+</section>
 
-              <p>
-                Engineering Degree in Computer Science,
-                specializing in Data Science & Artificial Intelligence.
-              </p>
-
-              <div className="skill-tags">
-                {["Data Science", "Machine Learning", "Deep Learning", "AI"].map(
-                  (item) => (
-                    <span key={item}>{item}</span>
-                  )
-                )}
-              </div>
-            </article>
-
-            {/* 2024 - New Age Travel */}
-            <article className="timeline-item">
-              <span className="timeline-date">2024</span>
-
-              <h3>Travel Agency Assistant · New Age Travel</h3>
-
-              <p>
-                Customer reservation management, administrative
-                organization, and customer relations.
-              </p>
-
-              <div className="skill-tags">
-                {["Customer Service", "Administration", "Communication"].map(
-                  (item) => (
-                    <span key={item}>{item}</span>
-                  )
-                )}
-              </div>
-            </article>
-
-            {/* 2016 - Easy-Constat */}
-            <article className="timeline-item">
-              <span className="timeline-date">2016</span>
-
-              <h3>Final-Year Internship · Easy-Constat</h3>
-
-              <p>
-                Development of a digital accident reporting application
-                using web and mobile technologies.
-              </p>
-
-              <div className="skill-tags">
-                {[
-                  "Java JEE",
-                  "Spring Boot",
-                  "AngularJS",
-                  "Ionic",
-                  "MySQL"
-                ].map((item) => (
-                  <span key={item}>{item}</span>
-                ))}
-              </div>
-            </article>
-
-            {/* 2015 - 2017 - New Age Travel */}
-            <article className="timeline-item">
-              <span className="timeline-date">2015 – 2017</span>
-
-              <h3>Travel Agency Assistant · New Age Travel</h3>
-
-              <p>
-                Customer reservation management, administrative
-                organization, and customer relations.
-              </p>
-
-              <div className="skill-tags">
-                {["Customer Service", "Administration", "Communication"].map(
-                  (item) => (
-                    <span key={item}>{item}</span>
-                  )
-                )}
-              </div>
-            </article>
-
-            {/* 2013 - 2016 */}
-            <article className="timeline-item">
-              <span className="timeline-date">2013 – 2016</span>
-
-              <h3>
-                Higher School of Sciences and Technology of Hammam Sousse
-              </h3>
-
-              <p>
-                Bachelor's Degree in Computer Science.
-              </p>
-            </article>
-
-          </div>
-        </section>
 
 
         {/* CERTIFICATIONS */}
