@@ -252,16 +252,16 @@ solutions and developing AI-powered applications.
             </div>
 
             <span className="floating-tag tag-one">
-              Machine Learning
-            </span>
+  Generative AI
+</span>
 
-            <span className="floating-tag tag-two">
-              Data Science
-            </span>
+<span className="floating-tag tag-two">
+  Data Science
+</span>
 
-            <span className="floating-tag tag-three">
-              Innovation
-            </span>
+<span className="floating-tag tag-three">
+  Machine Learning & Deep Learning
+</span>
           </div>
         </section>
 
