@@ -212,15 +212,20 @@ function App() {
               <h3>Who am I?</h3>
 
               <p>
-                I am a Computer Science Engineering student at the
-                Polytechnic School of Sousse, specializing in Data Science
-                and Artificial Intelligence.
+                  I am a Computer Science Engineering student at the
+    Polytechnic School of Sousse, specializing in Data Science
+    and Artificial Intelligence. I am passionate about
+    Machine Learning, Deep Learning, Natural Language
+    Processing (NLP), and Generative AI.
               </p>
 
               <p>
-                I am interested in developing intelligent solutions,
-                exploring machine learning techniques and building
-                applications that transform data into useful insights.
+                Through my academic projects and practical experience,
+    I have developed skills in data analysis, predictive
+    modeling, intelligent application development, and
+    software engineering. I enjoy exploring innovative
+    technologies and building AI-driven solutions to solve
+    real-world problems.
               </p>
             </div>
 
