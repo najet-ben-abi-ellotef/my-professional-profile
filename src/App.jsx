@@ -51,50 +51,115 @@ const skills = {
   ]
 };
 
+
 const projects = [
   {
     title: "JobMatch AI",
-    category: "Artificial Intelligence · Web Development",
+    category: "Artificial Intelligence · Full-Stack Development",
     description:
-      "An AI-powered recruitment platform designed to analyze CVs and match candidate profiles with job offers.",
-    technologies: ["React", "FastAPI", "PostgreSQL", "LLMs", "Docker"]
+      "An intelligent recruitment platform that analyzes CVs, extracts candidate information, and matches profiles with relevant job opportunities. It combines AI-powered processing with a modern web architecture.",
+    technologies: [
+      "React",
+      "FastAPI",
+      "Python",
+      "PostgreSQL",
+      "LLMs",
+      "Docker"
+    ]
   },
   {
     title: "Learning Disorders Detection",
     category: "Machine Learning · Explainable AI",
     description:
-      "A machine learning project focused on the early prediction of learning disorders using behavioral and educational data.",
-    technologies: ["Python", "Machine Learning", "Angular", "Flask"]
+      "An AI-based project focused on the early prediction of learning disorders using behavioral and educational data. It explores machine learning models, data preprocessing, model evaluation, and explainability.",
+    technologies: [
+      "Python",
+      "Machine Learning",
+      "Scikit-learn",
+      "XGBoost",
+      "Angular",
+      "Flask"
+    ]
   },
   {
     title: "Smart CV Management Application",
     category: "Mobile Development · AI",
     description:
-      "A mobile application for managing CVs and exploring intelligent recruitment features.",
-    technologies: ["Flutter", "Firebase", "Supabase"]
+      "A mobile application designed to simplify CV management and explore intelligent recruitment functionalities, including document handling and CV analysis.",
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Supabase"
+    ]
   },
   {
     title: "Distributed Big Data Project",
     category: "Big Data · Distributed Systems",
     description:
-      "A distributed data processing project using Hadoop and Spark across virtual machines.",
-    technologies: ["Hadoop", "Spark", "HDFS"]
+      "A distributed data processing project exploring the Hadoop ecosystem, virtual machine configuration, distributed storage, and large-scale data processing concepts.",
+    technologies: [
+      "Hadoop",
+      "Apache Spark",
+      "HDFS",
+      "Virtual Machines"
+    ]
   },
   {
     title: "SOA & Microservices",
-    category: "Software Architecture",
+    category: "Software Architecture · Distributed Systems",
     description:
-      "A project exploring service-oriented architecture and communication between distributed services.",
-    technologies: ["Kafka", "gRPC", "REST"]
+      "A project exploring service-oriented architecture, microservices communication, and integration of distributed services using different communication technologies.",
+    technologies: [
+      "Apache Kafka",
+      "gRPC",
+      "REST APIs",
+      "Microservices"
+    ]
   },
   {
     title: "Medical Appointment Management",
-    category: "Web Development",
+    category: "Web Development · Backend Development",
     description:
-      "A web application for managing medical appointments.",
-    technologies: ["Django"]
+      "A web application developed to organize and manage medical appointments, with a focus on application structure, backend development, and data management.",
+    technologies: [
+      "Python",
+      "Django"
+    ]
+  },
+
+  ,
+  {
+    title: "Gym Management System",
+    category: "Web Development · Management System",
+    description:
+      "A web application designed to manage gym members, subscriptions, training sessions, and schedules while simplifying administrative operations.",
+    technologies: ["Symfony", "PHP", "MySQL"]
+  },
+  {
+    title: "Online Learning Platform",
+    category: "Web Development · Education",
+    description:
+      "An interactive educational platform for managing courses, students, and instructors, with a structured and responsive user interface.",
+    technologies: ["Angular", "TypeScript", "HTML", "CSS"]
+  },
+  {
+    title: "Android Accident Reporting Application",
+    category: "Mobile Development",
+    description:
+      "A mobile application for reporting road accidents, including location-based features and photo submission.",
+    technologies: ["Android", "Mobile Development"]
+  },
+  {
+    title: "Blog REST API",
+    category: "Backend Development · Software Architecture",
+    description:
+      "A modular REST API for managing users and articles, following separation of concerns through controllers, routes, and validation.",
+    technologies: ["Node.js", "Express.js", "REST API", "JavaScript"]
   }
+
 ];
+
 
 function SectionTitle({ number, title, subtitle }) {
   return (
@@ -454,7 +519,11 @@ solutions and developing AI-powered applications.
               <h3>Angular & React Training</h3>
               <p>Training in modern frontend development.</p>
             </article>
-
+            <article className="cert-card">
+  <span>2016</span>
+  <h3>Spring Boot Training</h3>
+  <p>Training in Spring Boot and Java backend development.</p>
+</article>
             <article className="cert-card">
               <span>2015</span>
               <h3>Computer Night</h3>
